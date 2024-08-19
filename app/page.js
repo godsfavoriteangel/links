@@ -5,6 +5,7 @@ import Image from 'next/image';
 import useSWR from 'swr';
 import { SiSpotify } from 'react-icons/si';
 import Nav from './components/Nav';
+import { prefix } from '../prefix';
 
 
 const fetcher = (url) => fetch(url).then((r) => r.json());
@@ -19,7 +20,7 @@ const Home = () => {
           <div id='home_main_profile' className='flex flex-row items-center'>
           <Image 
             id='home_main_profile_img'
-            src='./pfp.png' 
+            src={`${prefix}/pfp.png`} 
             alt='profile' 
             width={250}
             height={250}
