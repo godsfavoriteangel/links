@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'porkys';
+  src: url('/fonts/porkys.ttf') format('truetype'); 
+ }
+
+
+@font-face {
+  font-family: 'rainyhearts';
+  src: url('/fonts/rainyhearts.ttf') format('truetype');
+}
+
+
+@layer base {
+  html, body {
+      @apply bg-black;
+      cursor: url('/cursor.png'), auto;
+  }
+
+  .custom-cursor {
+    cursor: url('/cursor.png'), auto;
+  }
+
+  a:hover {
+    text-decoration: underline
+  }
+}
+
+
+
+
+
+
+
+
+
+
