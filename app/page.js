@@ -5,7 +5,7 @@ import Image from 'next/image';
 import useSWR from 'swr';
 import { SiSpotify } from 'react-icons/si';
 import Nav from './components/Nav';
-import { prefix } from '../prefix';
+import { prefix } from '../prefix.ts';
 
 
 const fetcher = (url) => fetch(url).then((r) => r.json());
