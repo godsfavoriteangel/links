@@ -6,7 +6,7 @@ import useSWR from 'swr';
 import { SiSpotify } from 'react-icons/si';
 import Nav from './components/Nav';
 import { prefix } from '../prefix.ts';
-import { getImagePath } from '../helpers/getImagePath';
+import { getImagePath } from './helpers/getImagePath';
 
 
 const fetcher = (url) => fetch(url).then((r) => r.json());
