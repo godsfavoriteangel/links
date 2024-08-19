@@ -4,7 +4,7 @@ require('dotenv').config();
 import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
 import useSWR from 'swr';
-import { SiSpotify } from "react-icons/si";
+import { SiSpotify } from 'react-icons/si';
 import Nav from './components/Nav';
 
 
