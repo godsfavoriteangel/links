@@ -12,7 +12,7 @@ const fetcher = (url) => fetch(url).then((r) => r.json());
   
 
 const Home = () => {
-  const { data } = useSWR('/api/spotify', fetcher);
+  const { data } = useSWR(`${prefix}/api/spotify`, fetcher);
   return (
     <div> 
       <Nav />
@@ -44,8 +44,8 @@ const Home = () => {
               {data?.isPlaying ? (
                 <img
                   className='rounded-md'
-                  src={data?.albumImageUrl}
-                  alt={data?.album}
+                  src={`${prefix}${data?.albumImageUrl}`}
+                  alt= {`${prefix}${data?.album}`}
                 />
               ) : (
                 <SiSpotify size={64} color={'#fbcfe8'}  className='m-auto'/>
@@ -53,10 +53,10 @@ const Home = () => {
             </div>
             <div id='home_main_spotify_bottom'>
               <p id='home_main_spotify_title' className='text-pink-200 text-shadow-[0_2px_8px_#fbcfe8] text-center'>
-                {data?.isPlaying ? data.title : 'Not Listening'}
+              {prefix}{data?.isPlaying ? data.title : 'Not Listening'}
               </p>
               <p id='home_main_spotify_artist' className='text-pink-200 text-shadow-[0_2px_8px_#fbcfe8] text-center'>
-                {data?.isPlaying ? data.artist : 'Spotify'}
+              {prefix}{data?.isPlaying ? data.artist : 'Spotify'}
               </p>
               <h3 id='home_main_spotify_time' className='text-pink-200 text-shadow-[0_2px_8px_#fbcfe8] text-center pt-2'>
                 ▶︎ •၊ ၊||၊| ။ ||||။ ‌၊|• 0:10
