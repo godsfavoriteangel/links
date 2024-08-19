@@ -5,15 +5,13 @@ import Image from 'next/image';
 import useSWR from 'swr';
 import { SiSpotify } from 'react-icons/si';
 import Nav from './components/Nav';
-import { prefix } from '../prefix.ts';
-import { getImagePath } from './helpers/getImagePath';
 
 
 const fetcher = (url) => fetch(url).then((r) => r.json());
   
 
 const Home = () => {
-  const { data } = useSWR(`${prefix}/api/spotify`, fetcher);
+  const { data } = useSWR('/api/spotify', fetcher);
   return (
     <div> 
       <Nav />
@@ -21,7 +19,7 @@ const Home = () => {
           <div id='home_main_profile' className='flex flex-row items-center'>
           <Image 
             id='home_main_profile_img'
-            src={getImagePath('pfp.png')} 
+            src='/pfp.png' 
             alt='profile' 
             width={250}
             height={250}
@@ -45,8 +43,8 @@ const Home = () => {
               {data?.isPlaying ? (
                 <img
                   className='rounded-md'
-                  src={`${prefix}${data?.albumImageUrl}`}
-                  alt= {`${prefix}${data?.album}`}
+                  src={data?.albumImageUrl}
+                  alt={data?.album}
                 />
               ) : (
                 <SiSpotify size={64} color={'#fbcfe8'}  className='m-auto'/>
@@ -54,10 +52,10 @@ const Home = () => {
             </div>
             <div id='home_main_spotify_bottom'>
               <p id='home_main_spotify_title' className='text-pink-200 text-shadow-[0_2px_8px_#fbcfe8] text-center'>
-              {prefix}{data?.isPlaying ? data.title : 'Not Listening'}
+                {data?.isPlaying ? data.title : 'Not Listening'}
               </p>
               <p id='home_main_spotify_artist' className='text-pink-200 text-shadow-[0_2px_8px_#fbcfe8] text-center'>
-              {prefix}{data?.isPlaying ? data.artist : 'Spotify'}
+                {data?.isPlaying ? data.artist : 'Spotify'}
               </p>
               <h3 id='home_main_spotify_time' className='text-pink-200 text-shadow-[0_2px_8px_#fbcfe8] text-center pt-2'>
                 ▶︎ •၊ ၊||၊| ။ ||||။ ‌၊|• 0:10
