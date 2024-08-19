@@ -19,7 +19,7 @@ const Home = () => {
           <div id='home_main_profile' className='flex flex-row items-center'>
           <Image 
             id='home_main_profile_img'
-            src='/pfp.png' 
+            src='./pfp.png' 
             alt='profile' 
             width={250}
             height={250}
