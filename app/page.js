@@ -1,5 +1,4 @@
 "use client";
-require('dotenv').config();
 
 import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
