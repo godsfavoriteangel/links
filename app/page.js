@@ -70,27 +70,27 @@ const Home = () => {
       <div>
         <ul id='socials' className='flex flex-col justify-center items-center my-3'>
           <li className='py-2'>
-            <Link href="https://www.instagram.com/harmonyevaa/" className='text-pink-200 text-shadow-[0_2px_8px_#fbcfe8] font-porkys text-3xl xl:text-4xl'>
+            <Link href="https://www.instagram.com/harmonyevaa/" className='text-pink-200 text-shadow-[0_2px_8px_#fbcfe8] font-porkys text-3xl xl:text-4xl custom-cursor'>
             ✧ i n s t a g r a m ✧
             </Link>
           </li>
           <li className='py-2'>
-            <Link href="https://www.instagram.com/harmonyevaa/" className='text-pink-200 text-shadow-[0_2px_8px_#fbcfe8] font-porkys text-3xl xl:text-4xl'>
+            <Link href="https://x.com/harmonyevaa" className='text-pink-200 text-shadow-[0_2px_8px_#fbcfe8] font-porkys text-3xl xl:text-4xl custom-cursor'>
             ✧ t w i t t e r ✧
             </Link>
           </li>
           <li className='py-2'>
-            <Link href="https://www.instagram.com/harmonyevaa/" className='text-pink-200 text-shadow-[0_2px_8px_#fbcfe8] font-porkys text-3xl xl:text-4xl'>
+            <Link href="https://www.twitch.tv/harmony" className='text-pink-200 text-shadow-[0_2px_8px_#fbcfe8] font-porkys text-3xl xl:text-4xl custom-cursor'>
             ✧ t w i t c h ✧
             </Link>
           </li>
           <li className='py-2'>
-            <Link href="https://www.instagram.com/harmonyevaa/" className='text-pink-200 text-shadow-[0_2px_8px_#fbcfe8] font-porkys text-3xl xl:text-4xl'>
+            <Link href="tiktok.com/@harmonyevaa" className='text-pink-200 text-shadow-[0_2px_8px_#fbcfe8] font-porkys text-3xl xl:text-4xl custom-cursor'>
             ✧ t i k t o k ✧
             </Link>
           </li>
-          <li className='py-2'>
-            <Link href="https://www.instagram.com/harmonyevaa/" className='text-pink-200 text-shadow-[0_2px_8px_#fbcfe8] font-porkys text-3xl xl:text-4xl'>
+          <li className='py-2 '>
+            <Link href="https://onlyfans.com/harmonyeva" className='text-pink-200 text-shadow-[0_2px_8px_#fbcfe8] font-porkys text-3xl xl:text-4xl custom-cursor '>
             ✧ o n l y f a n s ✧
             </Link>
           </li>
