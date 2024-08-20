@@ -20,7 +20,7 @@ import Nav from '../components/Nav';
     return (
       <div>
         <Nav />
-        <div className='flex flex-row justify-center m-10'>
+        <div className='flex flex-row justify-center m-5'>
             <ImageTile 
               images={images} 
             /> 

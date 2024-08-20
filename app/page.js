@@ -6,6 +6,7 @@ import pfp from '../public/pfp.png';
 import useSWR from 'swr';
 import { SiSpotify } from 'react-icons/si';
 import Nav from './components/Nav';
+import Link from 'next/link';
 
 
 const fetcher = (url) => fetch(url).then((r) => r.json());
@@ -16,7 +17,7 @@ const Home = () => {
   return (
     <div> 
       <Nav />
-      <div id='home_main' className='w-[375px] md:w-[768px] xl:w-[1100px] xl:border-2 xl:rounded-xl xl:border-pink-200 xl:shadow-[0_0_2px_#fbcfe8,inset_0_0_2px_#fbcfe8,0_0_5px_#fbcfe8,0_0_15px_#fbcfe8,0_0_30px_#fbcfe8] mx-auto xl:mt-10 xl:mb-10 justify-center items-center px-6 xl:py-5 flex flex-col xl:flex-row ' >
+      <div id='home_main' className='w-[375px] md:w-[768px] xl:w-[1100px] xl:border-2 xl:rounded-xl xl:border-pink-200 xl:shadow-[0_0_2px_#fbcfe8,inset_0_0_2px_#fbcfe8,0_0_5px_#fbcfe8,0_0_15px_#fbcfe8,0_0_30px_#fbcfe8] mx-auto xl:mt-10 xl:mb-10 justify-center items-center px-6 xl:py-5 flex flex-col xl:flex-row' >
           <div id='home_main_profile' className='flex flex-col items-center xl:flex-row'>
           <Image 
             id='home_main_profile_img'
@@ -26,15 +27,17 @@ const Home = () => {
             priority
           />
           <div id='home_main_profile_text' className='mx-7'>
-            <h1 id='home_main_profile_title' className='text-pink-200 text-4xl xl:text-5xl text-shadow-[0_2px_12px_#eec3d6] font-porkys text-center my-2 '>
+            <h1 id='home_main_profile_title' className='text-pink-200 text-4xl xl:text-5xl text-shadow-[0_2px_8px_#fbcfe8] font-porkys text-center my-2'>
               ❤︎ h a r m o n y ❤︎
             </h1>
             <h2 id='home_main_profile_desc' className='text-pink-200 text-shadow-[0_2px_8px_#fbcfe8] w-[350px] md:w-[400px] mx-2 my-3 text-center font-rainyhearts text-lg/6 md:text-xl/6 '>
-              21y/o based in LA  ☆ self taught web dev <br></br> So if on advanced addition absolute received replying throwing he. Delighted consisted newspaper of unfeeling as neglected so. Tell size come hard mrs and four fond a
+              21y/o based in LA ☆ self taught web dev <br></br> powered by adderall and nicotine <br></br> cultivating my soul online and attempting to make meaningful connections <br></br> media i enjoy: ff7, evangelion, kh, csgo
             </h2>
           </div>
         </div>
-        <div id='home_main_spotify' className='my-3 xl:my-0'>
+        <div id='home_main_spotify' className='my-3 xl:my-0' onClick={() => {
+          location.href = 'https://open.spotify.com/user/harmonykloes';
+        }}>
           <div id='home_main_spotify_top' className=' rounded-lg border border-pink-200  w-[280px] flex flex-col  items-center pt-2 pb-2 shadow-[0_0_2px_#fbcfe8,inset_0_0_2px_#fbcfe8,0_0_5px_#fbcfe8,0_0_15px_#fbcfe8,0_0_1px_#fbcfe8] '>
             <p id='home_main_spotify_title' className='text-pink-200 text-shadow-[0_2px_8px_#fbcfe8] '>
             ♫ ₊˚. currently listening .˚₊ ♫
@@ -65,7 +68,33 @@ const Home = () => {
         </div>
       </div>
       <div>
-
+        <ul id='socials' className='flex flex-col justify-center items-center my-3'>
+          <li className='py-2'>
+            <Link href="https://www.instagram.com/harmonyevaa/" className='text-pink-200 text-shadow-[0_2px_8px_#fbcfe8] font-porkys text-3xl xl:text-4xl'>
+            ✧ i n s t a g r a m ✧
+            </Link>
+          </li>
+          <li className='py-2'>
+            <Link href="https://www.instagram.com/harmonyevaa/" className='text-pink-200 text-shadow-[0_2px_8px_#fbcfe8] font-porkys text-3xl xl:text-4xl'>
+            ✧ t w i t t e r ✧
+            </Link>
+          </li>
+          <li className='py-2'>
+            <Link href="https://www.instagram.com/harmonyevaa/" className='text-pink-200 text-shadow-[0_2px_8px_#fbcfe8] font-porkys text-3xl xl:text-4xl'>
+            ✧ t w i t c h ✧
+            </Link>
+          </li>
+          <li className='py-2'>
+            <Link href="https://www.instagram.com/harmonyevaa/" className='text-pink-200 text-shadow-[0_2px_8px_#fbcfe8] font-porkys text-3xl xl:text-4xl'>
+            ✧ t i k t o k ✧
+            </Link>
+          </li>
+          <li className='py-2'>
+            <Link href="https://www.instagram.com/harmonyevaa/" className='text-pink-200 text-shadow-[0_2px_8px_#fbcfe8] font-porkys text-3xl xl:text-4xl'>
+            ✧ o n l y f a n s ✧
+            </Link>
+          </li>
+        </ul>
       </div>
     </div>
   );
