@@ -12,7 +12,7 @@ const Nav = () => {
             <Link href="/images" className='text-pink-200 text-lg md:text-2xl text-shadow-[0_4px_12px_#fbcfe8] custom-cursor'>⋆ ｡‧˚ʚ ୨୧ ɞ˚‧｡⋆</Link>
           </li>
           <li className='flex-1 text-left'>
-            <Link href="/coding" className='text-pink-200 text-lg md:text-2xl text-shadow-[0_4px_12px_#fbcfe8] px-6 custom-cursor'>projects</Link>
+            <Link href="/projects" className='text-pink-200 text-lg md:text-2xl text-shadow-[0_4px_12px_#fbcfe8] px-6 custom-cursor'>projects</Link>
           </li>
         </ul>
     </div>

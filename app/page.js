@@ -94,6 +94,11 @@ const Home = () => {
             ✧ o n l y f a n s ✧
             </Link>
           </li>
+          <li className='py-2 '>
+            <Link href="https://discord.gg/BJvCdJNQZD" className='text-pink-200 text-shadow-[0_2px_8px_#fbcfe8] font-porkys text-3xl xl:text-4xl custom-cursor '>
+            ✧ d i s c o r d ✧
+            </Link>
+          </li>
         </ul>
       </div>
     </div>

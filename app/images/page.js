@@ -3,7 +3,7 @@ import ImageTile from '../components/ImageTile';
 import { useState, useEffect } from 'react';
 import Nav from '../components/Nav';
 
-  const Home = () => {
+  const Images = () => {
     const [images, setImages] = useState([]);
   
     useEffect(() => {
@@ -30,4 +30,4 @@ import Nav from '../components/Nav';
     );
   };
   
-  export default Home;
+  export default Images;
