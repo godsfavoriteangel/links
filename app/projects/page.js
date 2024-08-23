@@ -3,6 +3,7 @@ import Nav from '../components/Nav';
 import Image from 'next/image';
 import Link from 'next/link';
 
+
 const Projects = () => {
     return (
       <div>
@@ -13,7 +14,7 @@ const Projects = () => {
           </p>
         </div>
         <div id='projects_container' className='md:grid md:grid-cols-2 lg:grid lg:grid-cols-3 lg:justify-center lg:max-w-[1600px] lg:mx-auto '> 
-          <div id='projects_card' className='w-[350px] border-2 rounded-xl border-pink-200 shadow-[0_0_2px_#fbcfe8,inset_0_0_2px_#fbcfe8,0_0_5px_#fbcfe8,0_0_15px_#fbcfe8,0_0_30px_#fbcfe8] flex flex-col px-5 py-3 mx-auto my-12 '>
+          <div id='projects_card' className='w-[350px] border-2 rounded-xl border-pink-200 shadow-[0_0_2px_#fbcfe8,inset_0_0_2px_#fbcfe8,0_0_5px_#fbcfe8,0_0_15px_#fbcfe8,0_0_30px_#fbcfe8] flex flex-col px-5 py-3 mx-auto my-12'>
             <h1 id='projects_card_title' className='text-pink-200 text-shadow-[0_2px_ 8px_#fbcfe8] font-rainyhearts text-3xl'>Pokedex</h1>
             <p id='projects_card_desc' className='text-pink-200 text-shadow-[0_2px_8px_#fbcfe8] font-rainyhearts text-lg/4'>using the pokeapi, this pokedex displays all the first 150 pokemon</p>
             <Image 

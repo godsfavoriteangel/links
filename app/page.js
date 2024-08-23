@@ -73,42 +73,42 @@ const Home = () => {
           <li className='py-2 mx-auto'>
             <Link href="https://www.instagram.com/harmonyevaa/" className='text-pink-200 text-shadow-[0_2px_8px_#fbcfe8] font-porkys text-3xl xl:text-4xl custom-cursor'>
             <Sparkles>
-            ✧ i n s t a g r a m ✧
+            ✧ i n s t a g r a m ✧
             </Sparkles>
             </Link>
           </li>
           <li className='py-2 mx-auto'>
             <Link href="https://x.com/harmonyevaa" className='text-pink-200 text-shadow-[0_2px_8px_#fbcfe8] font-porkys text-3xl xl:text-4xl custom-cursor'>
             <Sparkles>
-            ✧ t w i t t e r ✧
+            ✧ t w i t t e r ✧
             </Sparkles>
             </Link>
           </li>
           <li className='py-2 mx-auto'>
             <Link href="https://www.twitch.tv/harmony" className='text-pink-200 text-shadow-[0_2px_8px_#fbcfe8] font-porkys text-3xl xl:text-4xl custom-cursor'> 
             <Sparkles>
-            ✧ t w i t c h ✧
+            ✧ t w i t c h ✧
             </Sparkles>
             </Link>
           </li>
           <li className='py-2 mx-auto'>
             <Link href="tiktok.com/@harmonyevaa" className='text-pink-200 text-shadow-[0_2px_8px_#fbcfe8] font-porkys text-3xl xl:text-4xl custom-cursor'>
             <Sparkles>
-            ✧ t i k t o k ✧
+            ✧ t i k t o k ✧
             </Sparkles>
             </Link>
           </li>
           <li className='py-2 mx-auto'>
             <Link href="https://onlyfans.com/harmonyeva" className='text-pink-200 text-shadow-[0_2px_8px_#fbcfe8] font-porkys text-3xl xl:text-4xl custom-cursor '>
             <Sparkles>
-            ✧ o n l y f a n s ✧
+            ✧ o n l y f a n s ✧
             </Sparkles>
             </Link>
           </li>
           <li className='py-2 mx-auto'>
             <Link href="https://discord.gg/BJvCdJNQZD" className='text-pink-200 text-shadow-[0_2px_8px_#fbcfe8] font-porkys text-3xl xl:text-4xl custom-cursor '>
             <Sparkles>
-            ✧ d i s c o r d ✧
+            ✧ d i s c o r d ✧
             </Sparkles>
             </Link>
           </li>

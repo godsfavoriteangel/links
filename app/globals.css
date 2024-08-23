@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@tailwind variants;
 
 
 @font-face {
@@ -25,9 +26,6 @@
     cursor: url('/cursor.png'), auto;
   }
 }
-
-
-
 
 
 
