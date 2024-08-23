@@ -26,8 +26,22 @@
     cursor: url('/cursor.png'), auto;
   }
 }
+#projects_card {
+  width: 350px;
+  border: 2px solid #fbcfe8; /* pink border */
+  border-radius: 0.75rem; /* rounded corners */
+  box-shadow: 0 0 2px #fbcfe8, inset 0 0 2px #fbcfe8, 0 0 5px #fbcfe8, 0 0 15px #fbcfe8, 0 0 30px #fbcfe8;
+  transition: box-shadow 0.4s ease-in-out; /* shortened duration */
+  padding: 1rem 1.25rem; /* padding */
+  margin: 3rem auto; /* margin */
+  display: flex;
+  flex-direction: column;
+}
 
-
+/* hover effect */
+#projects_card:hover {
+  box-shadow: 0 0 10px #fbcfe8, inset 0 0 2px #fbcfe8, 0 0 20px #fbcfe8, 0 0 20px #fbcfe8, 0 0 40px #fbcfe8;
+}
 
 
 
