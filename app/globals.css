@@ -26,7 +26,8 @@
     cursor: url('/cursor.png'), auto;
   }
 }
-#projects_card {
+
+.projects_card {
   width: 350px;
   border: 2px solid #fbcfe8; /* pink border */
   border-radius: 0.75rem; /* rounded corners */

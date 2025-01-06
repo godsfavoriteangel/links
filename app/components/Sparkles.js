@@ -18,6 +18,7 @@ const generateSparkle = color => {
   };
   return sparkle;
 };
+
 const Sparkles = ({ color = DEFAULT_COLOR, children, ...delegated }) => {
     const [sparkles, setSparkles] = React.useState([]);
   const [isHovered, setIsHovered] = React.useState(false);

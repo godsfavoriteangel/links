@@ -1,5 +1,6 @@
 "use client";
 
+
 import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
 import pfp from '../public/pfp.png';
@@ -11,7 +12,7 @@ import Sparkles from './components/Sparkles';
 
 
 const fetcher = (url) => fetch(url).then((r) => r.json());
-  
+
 
 const Home = () => {
   const { data } = useSWR('/api/spotify', fetcher);
@@ -32,7 +33,7 @@ const Home = () => {
               ❤︎ h a r m o n y ❤︎
             </h1>
             <h2 id='home_main_profile_desc' className='text-pink-200 text-shadow-[0_2px_8px_#fbcfe8] w-[350px] md:w-[400px] mx-2 my-3 text-center font-rainyhearts text-lg/6 md:text-xl/6 '>
-              21y/o based in LA ☆ self taught web dev <br></br> powered by adderall and nicotine <br></br> cultivating my soul online and attempting to make meaningful connections <br></br> media i enjoy: ff7, evangelion, kh, csgo
+              22y/o based in LA ☆ self taught web dev <br></br> powered by adderall and nicotine <br></br> cultivating my soul online and attempting to make meaningful connections <br></br> media i enjoy: ff7, evangelion, kh, csgo
             </h2>
           </div>
         </div>
