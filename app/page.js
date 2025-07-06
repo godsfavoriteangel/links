@@ -93,7 +93,7 @@ const Home = () => {
             </Link>
           </li>
           <li className='py-2 mx-auto'>
-            <Link href="tiktok.com/@harmonyevaa" className='text-pink-200 text-shadow-[0_2px_8px_#fbcfe8] font-porkys text-3xl xl:text-4xl custom-cursor'>
+            <Link href="https://www.tiktok.com/@harmonyevaa" className='text-pink-200 text-shadow-[0_2px_8px_#fbcfe8] font-porkys text-3xl xl:text-4xl custom-cursor'>
             <Sparkles>
             ✧ t i k t o k ✧
             </Sparkles>
