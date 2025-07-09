@@ -72,7 +72,7 @@ const Home = () => {
       <div>
         <ul id='socials' className='flex flex-col justify-center items-center my-3 xl:grid xl:grid-cols-2 xl:gap-3 xl:justify-center xl:items-center xl:max-w-[1000px] xl:mx-auto'>
           <li className='py-2 mx-auto'>
-            <Link href="https://www.instagram.com/harmonyevaa/" className='text-pink-200 text-shadow-[0_2px_8px_#fbcfe8] font-porkys text-3xl xl:text-4xl custom-cursor'>
+            <Link href="https://www.instagram.com/harmonyevaa/" className='text-pink-200 text-shadow-[0_2px_4px_#fbcfe8] font-porkys text-3xl xl:text-4xl custom-cursor '>
             <Sparkles>
             ✧ i n s t a g r a m ✧
             </Sparkles>
