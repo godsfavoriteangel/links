@@ -72,42 +72,42 @@ const Home = () => {
       <div>
         <ul id='socials' className='flex flex-col justify-center items-center my-3 xl:grid xl:grid-cols-2 xl:gap-3 xl:justify-center xl:items-center xl:max-w-[1000px] xl:mx-auto'>
           <li className='py-2 mx-auto'>
-            <Link href="https://www.instagram.com/harmonyevaa/" className='text-pink-200 md:text-shadow-[0_2px_4px_#fbcfe8] font-porkys text-3xl xl:text-4xl custom-cursor '>
+            <Link href="https://www.instagram.com/harmonyevaa/" className='text-pink-200 md:text-shadow-[0_2px_8px_#fbcfe8] font-porkys text-3xl xl:text-4xl custom-cursor '>
             <Sparkles>
             ✧ i n s t a g r a m ✧
             </Sparkles>
             </Link>
           </li>
           <li className='py-2 mx-auto'>
-            <Link href="https://x.com/harmonyevaa" className='text-pink-200 text-shadow-[0_2px_8px_#fbcfe8] font-porkys text-3xl xl:text-4xl custom-cursor'>
+            <Link href="https://x.com/harmonyevaa" className='text-pink-200 md:text-shadow-[0_2px_8px_#fbcfe8] font-porkys text-3xl xl:text-4xl custom-cursor'>
             <Sparkles>
             ✧ t w i t t e r ✧
             </Sparkles>
             </Link>
           </li>
           <li className='py-2 mx-auto'>
-            <Link href="https://www.twitch.tv/harmony" className='text-pink-200 text-shadow-[0_2px_8px_#fbcfe8] font-porkys text-3xl xl:text-4xl custom-cursor'> 
+            <Link href="https://www.twitch.tv/harmony" className='text-pink-200 md:text-shadow-[0_2px_8px_#fbcfe8] font-porkys text-3xl xl:text-4xl custom-cursor'> 
             <Sparkles>
             ✧ t w i t c h ✧
             </Sparkles>
             </Link>
           </li>
           <li className='py-2 mx-auto'>
-            <Link href="https://www.tiktok.com/@harmonyevaa" className='text-pink-200 text-shadow-[0_2px_8px_#fbcfe8] font-porkys text-3xl xl:text-4xl custom-cursor'>
+            <Link href="https://www.tiktok.com/@harmonyevaa" className='text-pink-200 md:text-shadow-[0_2px_8px_#fbcfe8] font-porkys text-3xl xl:text-4xl custom-cursor'>
             <Sparkles>
             ✧ t i k t o k ✧
             </Sparkles>
             </Link>
           </li>
           <li className='py-2 mx-auto'>
-            <Link href="https://onlyfans.com/harmonyeva" className='text-pink-200 text-shadow-[0_2px_8px_#fbcfe8] font-porkys text-3xl xl:text-4xl custom-cursor '>
+            <Link href="https://onlyfans.com/harmonyeva" className='text-pink-200 md:text-shadow-[0_2px_8px_#fbcfe8] font-porkys text-3xl xl:text-4xl custom-cursor '>
             <Sparkles>
             ✧ o n l y f a n s ✧
             </Sparkles>
             </Link>
           </li>
           <li className='py-2 mx-auto'>
-            <Link href="https://discord.gg/BJvCdJNQZD" className='text-pink-200 text-shadow-[0_2px_8px_#fbcfe8] font-porkys text-3xl xl:text-4xl custom-cursor '>
+            <Link href="https://discord.gg/BJvCdJNQZD" className='text-pink-200 md:text-shadow-[0_2px_8px_#fbcfe8] font-porkys text-3xl xl:text-4xl custom-cursor '>
             <Sparkles>
             ✧ d i s c o r d ✧
             </Sparkles>
