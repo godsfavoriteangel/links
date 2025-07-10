@@ -1,3 +1,5 @@
+// route.js (or route.ts if you're using TypeScript)
+
 import querystring from 'querystring';
 
 const {
@@ -23,32 +25,17 @@ const getAccessToken = async () => {
     }),
   });
 
-  const data = await response.json(); // Parse the response as JSON
-  return data.access_token; // Return the access token
+  const data = await response.json();
+  return data.access_token;
 };
 
-export const getNowPlaying = async () => {
-  const access_token = await getAccessToken();
-
-  const response = await fetch(NOW_PLAYING_ENDPOINT, {
-    headers: {
-      Authorization: `Bearer ${access_token}`,
-    },
-  });
-
-  if (response.status === 204 || response.status > 400) {
-    return null; // No content or error
-  }
-
-  const data = await response.json(); // Convert response to JSON
-  return data; // Return the data
-};
-
-export default async (_, res) => {
+export async function GET() {
   const data = await getNowPlaying();
 
   if (!data || data.currently_playing_type !== 'track') {
-    return res.status(200).json({ isPlaying: false });
+    return new Response(JSON.stringify({ isPlaying: false }), {
+      status: 200,
+    });
   }
 
   const songData = {
@@ -60,5 +47,25 @@ export default async (_, res) => {
     songUrl: data.item.external_urls.spotify,
   };
 
-  res.status(200).json(songData);
+  return new Response(JSON.stringify(songData), {
+    status: 200,
+    headers: { 'Content-Type': 'application/json' },
+  });
+}
+
+const getNowPlaying = async () => {
+  const access_token = await getAccessToken();
+
+  const response = await fetch(NOW_PLAYING_ENDPOINT, {
+    headers: {
+      Authorization: `Bearer ${access_token}`,
+    },
+  });
+
+  if (response.status === 204 || response.status > 400) {
+    return null;
+  }
+
+  const data = await response.json();
+  return data;
 };
